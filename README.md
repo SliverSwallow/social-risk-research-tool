@@ -1,3 +1,10 @@
+This repository provides a reference implementation of the coordination-based framework for structural strain, trust, and system response.
+
+Related paper:
+- Structural Strain, Trust Erosion, and System Response (Preprint)
+
+Author: Nguyen Thai Binh (Silver Swallow)
+
 # Social Risk Assessment Tool
 
 A coordination-based analytical tool for evaluating structural social risk and trust dynamics under housing pressure, labor instability, demographic shifts, and welfare support.
