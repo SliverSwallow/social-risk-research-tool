@@ -91,17 +91,17 @@ System response (e.g., protest or instability)
 ### Pipeline
 
 
-Input indicators
+- Input indicators  
 ↓
-Structural strain calculation
+- Structural strain calculation  
 ↓
-Welfare adjustment
+- Welfare adjustment  
 ↓
-Trust estimation
+- Trust estimation  
 ↓
-Risk classification
+- Risk classification  
 ↓
-Interpretation + report
+- Interpretation + report
 
 
 ---
