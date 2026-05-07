@@ -1,81 +1,107 @@
-# Social Risk Assessment Tool
+# 🌍 Social Risk Assessment Tool
 
 From framework → model → application
 
-A coordination-based analytical tool for evaluating structural social risk and trust dynamics.
+A practical tool to understand how social pressure affects trust, stability, and decision-making.
 
 ---
 
-## 🔍 Overview
+## 💡 What is this project?
 
-This repository provides a reference implementation of a coordination-based framework for **structural strain, trust erosion, and system response**.
+This project helps analyze real-world social problems such as:
 
-Rather than treating trust as a psychological or cultural variable, this model interprets trust as an **emergent outcome of coordination under structural constraints**.
+- High cost of living  
+- Job instability  
+- Low fertility and demographic pressure  
+- Declining trust in society  
 
-The tool translates theoretical insights into a computational pipeline, enabling structured analysis of social instability.
+It shows how these factors interact and influence social stability.
+
+The goal is simple:
+
+> Help people better understand social risk and support more informed decisions.
 
 ---
 
-## 📄 Related Research
+## 🧠 Why this matters
 
-- *Structural Strain, Trust Erosion, and System Response* (Preprint)
-- *Trust and the Modern State: A Coordination-Based Framework for System Stability*
+In many societies today, people feel increasing pressure:
+
+- Living costs are rising  
+- Jobs are less stable  
+- Long-term planning becomes difficult  
+
+These pressures do not exist separately — they interact and affect:
+
+- Trust between individuals  
+- Trust in institutions  
+- Social cooperation  
+
+This project explores that connection.
 
 ---
 
-## ⚙️ What this tool does
+## 🔍 What this tool does
 
 The model estimates:
 
-- **Structural risk** (housing, labor, demographic pressure)
-- **Adjusted risk** (after welfare buffering)
-- **Trust score** (proxy for coordination effectiveness)
-- **Risk classification and interpretation**
-- **Policy-relevant insights**
+- **Structural risk**  
+  (housing, labor, demographic pressure)
+
+- **Adjusted risk**  
+  (after welfare support)
+
+- **Trust score**  
+  (how stable coordination is)
+
+- **Risk classification**  
+  (low / medium / high)
+
+- **Policy-relevant interpretation**
+
 - **Automated PDF reports**
 
 ---
 
-## 🧠 Conceptual Foundation
+## ⚙️ How it works
 
-The framework is based on a simple structural mechanism:
+The model follows a simple logic:
 
 
 Structural strain
-→ trust erosion
-→ coordination breakdown
-→ system response (protest / conflict)
+↓
+Trust erosion
+↓
+Coordination breakdown
+↓
+System response (e.g., protest or instability)
 
-
-Key domains:
-
-- **Housing** → affordability constraints  
-- **Labor** → income stability  
-- **Demography** → system reproduction  
-- **Welfare** → institutional buffering  
-
-Trust is modeled as:
-
-> A decreasing function of unmitigated structural strain.
 
 ---
 
-## ⚙️ Model Pipeline
+### Core domains
+
+- **Housing** → affordability pressure  
+- **Labor** → income stability  
+- **Demography** → long-term sustainability  
+- **Welfare** → system buffering  
+
+---
+
+### Pipeline
 
 
-Input Indicators
+Input indicators
 ↓
-Structural Strain Calculation
+Structural strain calculation
 ↓
-Welfare Adjustment
+Welfare adjustment
 ↓
-Trust Estimation
+Trust estimation
 ↓
-Risk Classification
+Risk classification
 ↓
-Interpretation + Policy Output
-↓
-PDF Report
+Interpretation + report
 
 
 ---
@@ -87,23 +113,15 @@ PDF Report
 - Lightweight fuzzy-enhanced logic  
 - Human-readable interpretation layer  
 - Exportable PDF reports  
-- Research-ready architecture  
+- Research-ready structure  
 
 ---
 
-## 📦 Installation
+## 📊 Example usage
 
-```bash
-git clone https://github.com/SliverSwallow/social-risk-research-tool.git
-cd social-risk-research-tool
-pip install -r requirements.txt
-▶️ Run the API
-uvicorn app.main:app --reload --port 8001
+### Request
 
-Open:
-
-http://127.0.0.1:8001/docs
-📊 Example Usage
+```json
 POST /analyze
 {
   "housing_cost_ratio": 0.6,
@@ -111,51 +129,82 @@ POST /analyze
   "fertility_rate": 1.3,
   "welfare_level": 0.3
 }
-📁 Project Structure
-social-risk-research-tool/
-├── app/
-├── reports/
-├── examples/
-├── outputs/
-├── README.md
-└── requirements.txt
-🔬 Research Context
+```
 
-This tool operationalizes a broader research program:
+## 📦 Installation
+```bash
+git clone https://github.com/SliverSwallow/social-risk-research-tool.git
+cd social-risk-research-tool
+pip install -r requirements.txt
+```
 
-Paper 1 → Structural strain
-Paper 2 → Trust as coordination outcome
-Paper 3 → System response (protest / conflict)
+## ▶️ Run the API
+```bash
+uvicorn app.main:app --reload --port 8001
+```
+Open:
+http://127.0.0.1:8001/docs
+
+
+## 🔬 Research background
+
+This tool is part of a broader research direction:
+
+- Structural strain
+- Trust as a coordination outcome
+- System response under pressure
 
 It serves as:
 
 A computational illustration
 A bridge between theory and application
 A prototype decision-support tool
-🎯 Intended Use
+
+## 🎯 Intended use
 Policy exploration
 NGO decision support
 Social risk screening
 Academic prototyping
-⚠️ Limitations
-Conceptual model (not empirically calibrated)
+
+## ⚠️ Limitations
+Conceptual model (not fully empirically calibrated)
 Simplified relationships
-Not designed for predictive accuracy
-🧩 Future Work
+Not designed for precise prediction
+## 🧩 Future work
 Empirical calibration
 Time-series modeling
 Agent-based extensions
-Dashboard / UI integration
-👤 Author
+Dashboard / UI
+## 🌍 Real-world example
+
+A small village (Arenillas) in Spain offers free housing and jobs to attract families and address population decline.
+
+This policy directly reduces structural strain in:
+
+housing
+labor
+demographic stability
+
+It illustrates how coordinated intervention can restore trust and social functioning.
+
+## 👤 Author
 
 Nguyen Thai Binh (Silver Swallow)
 Independent Researcher – Computational Social Systems
 
-📜 License
+## ❤️ Support this work
+
+If you find this project meaningful, you can support my research:
+
+☕ Buy me a coffee: https://buymeacoffee.com/sliverswallow
+
+Your support helps me continue developing tools and ideas for a more cooperative and stable society.
+
+## 📜 License
 
 MIT License
 
-⭐ Citation
+## ⭐ Citation
 
 If you use this work:
 
